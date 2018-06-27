@@ -9,17 +9,18 @@
     <link rel="stylesheet" href="css/style.css">
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
   </head>
 
   <body>
     <nav class="navbar navbar-inverse navbar-static-top">
       <div class="navbar-header">
-        <button type="button" class="navbar-toggle bg-orange" data-toggle="collapse" data-target="#navbar" style="background-color: orange;">
+        <button type="button" class="navbar-toggle bg-orange" data-toggle="collapse" data-target="#navbar" style="background-color: #18beff;">
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#" style="color: orange;">Currency Converter</a>
+        <a class="navbar-brand" href="#" style="color: #18beff;">Currency Converter</a>
       </div>
       <div class="navbar-collapse collapse" id="navbar">
         <ul class="nav navbar-nav">
@@ -28,10 +29,47 @@
         </ul>
       </div>
     </nav>
-    <div class="container">
+      <div class="container" style="margin-top: 200px;">
       <div class="row">
-        
-      </div>
+        <div class="col-md-6 col-lg-6 col-sm-6 col-lg-offset-3 col-centered">
+          <p class="text-center">Currency converter is a simple app that helps you convert from one currency to another. It's works even when there's no active connection and provides you with update functionality so you always have the latest exchange rates.</p>
+
+          
+        </div>
+        <div class="col-md-6 col-lg-6 col-sm-6 col-lg-offset-3 col-centered">
+          <div class="form-group">
+            <p>
+              <label for="fromCurrency">From:</label>
+            </p>
+            <p>
+              <select id="fromCurrency" style="width: 100%; height: 35px;">
+                
+              </select>
+            </p>
+            
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-6 col-sm-6 col-lg-offset-3 col-centered">
+          <div class="form-group">
+            <p>
+              <label for="toCurrency">To:</label>
+            </p>
+            <p>
+              <select id="toCurrency" style="width: 100%; height: 35px;">
+                
+              </select>
+            </p>
+            
+          </div>
+        </div><br>
+        <div class="col-md-6 col-lg-6 col-sm-6 col-lg-offset-3 col-centered">
+          <div class="input-group">
+            <input type="number" class="form-control" name="" id="amount" pattern="[0-9]*" min="0" max="999999999999999" placeholder="Enter amount...">
+          <div class="input-group-btn">
+            <button onclick="convertCurrency()" class="btn center-block convert-btn">Convert</button>
+          </div>
+        </div>
     </div>
+  </div>    
   </body>
 </html>

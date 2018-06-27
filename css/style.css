@@ -1,3 +1,10 @@
+/*
+Primary color: #ff6118 - orange;
+secondary color: #18beff - blue;
+sec color shade: #2889ff - blue shade;
+
+
+*/
 .navbar .navbar-header {
   float: none;
 }
@@ -17,5 +24,17 @@
   display: block !important;
 }
 .bg-orange {
-	background-color: orange;
+	background-color: #18beff;
+}
+.col-centered {
+	margin; 0 auto;
+	float: none;
+}
+.convert-btn {
+	background-color: #18beff;
+	color: #fff;
+}
+.convert-btn:hover {
+	background-color: #2889ff;
+	color: #fff;
 }

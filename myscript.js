@@ -5,19 +5,19 @@ fetch('https://free.currencyconverterapi.com/api/v5/countries')
   .then(function(results) {
     for (const result in results) {
       for (const id in results[result]) {
-        var fromSel = document.getElementById("fromCurrency");
-    var toSel = document.getElementById('toCurrency');
-    var opt1 = document.createElement('option');
-    var opt2 = document.createElement("option");
-    opt1.value = results[result][id]["currencyId"];
-    opt2.value = results[result][id]["currencyId"];
-    let currName = results[result][id]["currencyName"] + " " +"("+results[result][id]["currencyId"]+")";
-    opt1.innerHTML = currName;
-    opt2.innerHTML = currName; // whatever property it has
-    // then append it to the select element
-    fromSel.appendChild(opt1);
-    toSel.appendChild(opt2);
-       //index++;
+      	var fromSel = document.getElementById("fromCurrency");
+		var toSel = document.getElementById('toCurrency');
+		var opt1 = document.createElement('option');
+		var opt2 = document.createElement("option");
+		opt1.value = results[result][id]["currencyId"];
+		opt2.value = results[result][id]["currencyId"];
+		let currName = results[result][id]["currencyName"] + " " +"("+results[result][id]["currencyId"]+")";
+		opt1.innerHTML = currName;
+		opt2.innerHTML = currName; // whatever property it has
+		// then append it to the select element
+		fromSel.appendChild(opt1);
+		toSel.appendChild(opt2);
+		   //index++;
           //console.log(opt.value);
             //console.log(results[result][id]["currencyId"]);
 
