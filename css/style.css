@@ -1,18 +1,21 @@
-.bgimage {
-	background-image: url('../images/reptiles.jpg');
-	background-position: center center;
-	background-size: cover;
-	height: 200px;
+.navbar .navbar-header {
+  float: none;
 }
-.icon {
-	max-width: 150px;
-	margin: 0 auto;
-	display: block;
+.navbar .navbar-toggle {
+  display: block;
 }
-.services section {
-	text-align: center;
+.navbar .navbar-collapse.collapse {
+  display: none!important;
 }
-.my-bg {
-	background: powderblue;
-	width: 80%;
+.navbar .navbar-nav {
+  float: none!important;
+}
+.navbar .navbar-nav > li {
+  float: none;
+}
+.navbar .navbar-collapse.collapse.in {
+  display: block !important;
+}
+.bg-orange {
+	background-color: orange;
 }
